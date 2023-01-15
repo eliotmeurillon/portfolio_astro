@@ -1,0 +1,24 @@
+---
+export interface Props {
+  title: string;
+  body: string;
+  href: string;
+  class?: string;
+}
+
+const { href, title, body, class: className } = Astro.props;
+---
+
+<li
+  class={`flex items-center justify-center bg-slate-500 rounded-full py-10 text-white ${className}`}
+>
+  <a href={href}>
+    <h2>
+      {title}
+      <span>&rarr;</span>
+    </h2>
+    <p>
+      {body}
+    </p>
+  </a>
+</li>

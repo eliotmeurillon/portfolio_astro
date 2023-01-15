@@ -1,0 +1,11 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Experiences from "../components/Experiences.svelte";
+---
+
+<Layout title="Welcome to Astro.">
+  <main>
+    <h1>Hello, I'm Eliot and</h1>
+    <Experiences client:idle />
+  </main>
+</Layout>
